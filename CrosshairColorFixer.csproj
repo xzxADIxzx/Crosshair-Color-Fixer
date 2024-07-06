@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>CrosshairColorFixer</AssemblyName>
-    <Description>Changes the color of the health bar near the cursor to the one specified in the settings</Description>
+    <Description>Changes the color of the health bar near the crosshair to the one specified in the settings</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
