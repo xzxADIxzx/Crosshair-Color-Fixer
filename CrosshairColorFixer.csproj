@@ -13,7 +13,7 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>CrosshairColorFixer</RootNamespace>
-    <NoWarn>IDE0130</NoWarn>
+    <NoWarn>IDE0130, IDE1006</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +21,7 @@
 
     <Reference Include="lib\BepInEx.dll" />
     <Reference Include="lib\Assembly-CSharp.dll" />
+    <Reference Include="lib\UnityEngine.UI.dll" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
