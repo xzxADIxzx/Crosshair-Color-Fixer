@@ -4,7 +4,7 @@ using BepInEx;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-/// <summary> Class with the logic of the mod. Yeah, there is not a lot of things, but what did you expect? </summary>
+/// <summary> Plugin class containing the whole logic of the mod. There isn't a lot, but what did you expect? </summary>
 [BepInPlugin("xzxADIxzx.CorsshairColorFixer", "CrosshairColorFixer", "1.0.0")]
 public class Plugin : BaseUnityPlugin
 {
@@ -14,14 +14,14 @@ public class Plugin : BaseUnityPlugin
 
     private void ApplyFix()
     {
-        var comps = CanvasController.Instance?.transform.Find("Crosshair Filler/Crosshair/HealthBars")?.GetComponentsInChildren<Image>(true);
-        if (comps != null && cb)
+        var bars = CanvasController.Instance?.transform.Find("Crosshair Filler/Crosshair/HealthBars")?.GetComponentsInChildren<Image>(true);
+        if (bars != null && cb)
         {
-            comps[0].color = cb.healthBarAfterImageColor;
-            comps[1].color = cb.healthBarColor;
-            comps[2].color = cb.antiHpColor;
-            comps[3].color = cb.healthBarAfterImageColor;
-            comps[4].color = cb.overHealColor;
+            bars[0].color = cb.healthBarAfterImageColor;
+            bars[1].color = cb.healthBarColor;
+            bars[2].color = cb.antiHpColor;
+            bars[3].color = cb.healthBarAfterImageColor;
+            bars[4].color = cb.overHealColor;
         }
     }
 }
