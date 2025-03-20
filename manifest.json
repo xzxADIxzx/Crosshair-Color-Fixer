@@ -1,7 +1,7 @@
 {
     "name": "CrosshairColorFixer",
     "description": "Changes the color of the health bar near the crosshair to the one specified in the settings",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/xzxADIxzx/Crosshair-Color-Fixer",
     "dependencies": []
 }
